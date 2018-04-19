@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AmbitoRecursos"
+             x:Class="AmbitoRecursos.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ColorRed">Red</Color>
+            <Color x:Key="ColorGreen">Green</Color>
+            <Color x:Key="ColorBack">White</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid BackgroundColor="{StaticResource ColorBack}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Button Text="Boton Uno"
+                VerticalOptions="Center"
+                BackgroundColor="{StaticResource ColorRed}"></Button>
+        <Button Text="Boton Dos"
+                VerticalOptions="Center"
+                Grid.Column="1"
+                BackgroundColor="{StaticResource ColorGreen}"></Button>
+    </Grid>
+
+</ContentPage>
